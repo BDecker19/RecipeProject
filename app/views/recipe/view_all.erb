@@ -1,0 +1,5 @@
+<ul>
+  <% @recipes.each do |p| %>
+    <li class = "list_item"><%= link_to p.title, url_for("/recipe/display/#{p.id}") %></li>
+  <% end %>
+</ul>

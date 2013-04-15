@@ -1,0 +1,13 @@
+<H3>Search for a recipe...</H3>
+
+<div id="flash"><%= flash_tag :notice %></div>
+
+<% form_tag url_for(:recipe, :search) do %>
+
+   <p>
+    <%= label_tag 'Recipe name' %>
+    <%= text_field_tag :title_query %>
+  </p>
+
+  <%= submit_tag %>
+<% end %>

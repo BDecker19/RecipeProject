@@ -1,0 +1,42 @@
+body{
+  font-family: "Chalet", Georgia, serif;  
+}
+
+body #header{
+    background-color: grey;
+    padding: 10px;
+}
+
+#header li{
+  margin-bottom: 10px;
+  color: black;
+}
+
+a:link {
+  color: white;
+}
+
+a:hover, a:active {
+  color: blue;
+}
+
+#flash{
+  color: red;
+}
+
+.list_item{
+  margin-bottom: 10px;
+}
+
+h1{
+  font-size: 32pt;
+  text-align: Left;
+}
+
+h3{
+	margin-top: 20px;
+}
+
+img{
+  width: 600px;
+}

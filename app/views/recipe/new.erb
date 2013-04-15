@@ -1,0 +1,33 @@
+<h3>New Recipe</h3>
+
+<%= flash_tag :notice %>
+
+<% form_tag url_for(:recipe, :create) do %>
+
+  <p>
+	  <%= label_tag :ingredients_list %>
+	  <%= text_field_tag :ingredients_list %>
+  </p>
+
+  <p>
+	  <%= label_tag :body %>
+	  <%= text_field_tag :body %>
+  </p>
+
+  <p>
+	  <%= label_tag :title %>
+	  <%= text_field_tag :title %>
+  </p>
+
+   <p>
+	  <%= label_tag :cuisine %>
+	  <%= text_field_tag :cuisine %>
+  </p>
+
+   <p>
+    <%= label_tag :image_url %>
+    <%= text_field_tag :image_url %>
+  </p>
+
+  <%= submit_tag %>
+<% end %>

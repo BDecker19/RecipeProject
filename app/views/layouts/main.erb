@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+</head>
+
+<body>
+  <div id="header">
+    <h1>Benji's Recipe Emporium</h1>
+
+    <ul>
+      <li><%= link_to 'Create a Recipe', url_for('/recipe/new') %></li>
+      <li><%= link_to 'View All Recipes', url_for('/recipe') %></li>
+      <li><%= link_to 'Search for a Recipe', url_for('/recipe/search') %></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <%= yield %>
+  </div>
+</body>
+
+</html>
